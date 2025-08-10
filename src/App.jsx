@@ -23,6 +23,7 @@ import { Toaster } from "sonner";
 import { loader as LandingLoader } from "./pages/Landing";
 import { loader as singleProductLoader } from "./pages/SingleProduct";
 import { loader as ProductsLoader } from "./pages/Products";
+import { loader as CheckoutLoader } from "./pages/Checkout";
 
 // actions
 import { action as registerAction } from "./pages/Register";
@@ -64,6 +65,7 @@ const router = createBrowserRouter([
       {
         path: "checkout",
         element: <Checkout />,
+        loader: CheckoutLoader(store),
       },
       {
         path: "orders",

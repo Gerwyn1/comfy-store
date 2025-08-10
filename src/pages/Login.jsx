@@ -66,7 +66,7 @@ const Login = () => {
         </div>
         <button
           type="button"
-          className="btn btn-secondary btn-block"
+          className="btn btn-secondary btn-block uppercase"
           onClick={loginAsGuestUser}
         >
           guest user
